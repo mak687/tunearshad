@@ -42,8 +42,8 @@ Kindly follow below step & run mentioned commands
 
 ## IMPORTANT NOTE
 
-- I added Vendor directory & .env in GIT Repo for plug n play test project although it's not recomended.Because each developer / server using application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would get exposed.
+- I added .env in GIT Repo for plug n play test project although it's not recomended.Because each developer / server using application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would get exposed.
 
 - Currently API is open. Authentication is not applied
 
-- Avatar S3 Image are blocked so i place a logic for displaying other image with those use who've Avatar images.
+- Avatar S3 Image are blocked so i place a logic for displaying Fallback avatar images which is store in employee table.
