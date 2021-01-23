@@ -11,7 +11,11 @@
 				</div>
 				<div class="widget-user-image">
   				 @if (!empty($user->avatar))
-				  <img class="img-circle" src="{{$user->avatar}}" alt="User Avatar" onerror=this.src="{{$user->avatar_img_fallback}}">
+				 
+					@php
+						$fallBackImg = str_replace('http://localhost',URL::to('/'),$user->avatar_img_fallback);
+					@endphp
+				  <img class="img-circle" src="{{$user->avatar}}" alt="User Avatar" onerror=this.src="{{$fallBackImg}}">
 				  @else
 					  <span class="i-circle">@if (!empty($user->name[0])){{$user->name[0]}}@endif  </span>
 				  @endif  
