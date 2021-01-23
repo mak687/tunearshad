@@ -20,8 +20,11 @@ Kindly follow below step & run mentioned commands
 
 - Final Step
 
-	-- please run 
-		-- php artisan serve ( its assign you a url like http://127.0.0.1:8000/. ). Now open the assigned URL in the browser.
+	php artisan serve 
+	
+	Above command will assign a url like http://127.0.0.1:8000/. ).
+
+Now open the assigned URL in the browser.
 
 
 ## API
