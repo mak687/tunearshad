@@ -29,6 +29,7 @@ class Employee extends Model
 		return \DB::table('employees')->select(\DB::raw(
 							'employees.name,
 							 employees.avatar,
+							 employees.avatar_img_fallback,
 							 employees.occupation, 
 							 SUM(cl.revenue) AS totalConversions,
 							 GROUP_CONCAT(revenue)  AS revenue,
