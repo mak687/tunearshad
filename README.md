@@ -8,7 +8,7 @@ Kindly follow below step & run mentioned commands
 
 - Step # 2 Create Database
 
-	 php artisan db:create tunedb
+	 php artisan db:create tune_arshad
 
 - Step # 3 Run migration
 
