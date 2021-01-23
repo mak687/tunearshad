@@ -1,6 +1,6 @@
 ## PROJECT SETUP STEPS 
 
-Kindly folow below step & run mentioned commands
+Kindly follow below step & run mentioned commands
 
 - Step # 1 Installation of Libraries
 
@@ -28,15 +28,16 @@ Kindly folow below step & run mentioned commands
 
 - To Get All List of USER
 
-	BASE_URL/api/employee
+	<-BASE_URL->/api/employee
 
 - To Get Sepecific User Info By Id
 	
-	BASE_URL/api/employee/{id}
+	<-BASE_URL->/api/employee/{id}
 
 - To Get Event for All User
 	
-	BASE_URL/api/showEmployeeEvent
+	<-BASE_URL->/api/showEmployeeEvent
+
 
 
 ## IMPORTANT NOTE
