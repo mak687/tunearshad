@@ -33,35 +33,35 @@ Now open the assigned URL in the browser.
 
 - <b>To Get All List of Employee</b>
 
-	<-BASE_URL->/api/employee
+	- <i><-BASE_URL->/api/employee</i>
 
 - <b>To Get Sepecific Employee Info By Id</b>
 	
-	<-BASE_URL->/api/employee/{id}
+	- <i><-BASE_URL->/api/employee/{id}</i>
 
 - <b>To Get Event for All Employee</b>
 	
-	<-BASE_URL->/api/showEmployeeEvent
+	- <i><-BASE_URL->/api/showEmployeeEvent</i>
 
 - <b>To Get Event for All Employee - SORT BY NAME </b>
 	
-	<-BASE_URL->/api/showEmployeeEvent/employeeName/asc
-	<-BASE_URL->/api/showEmployeeEvent/employeeName/desc
+	- <i><-BASE_URL->/api/showEmployeeEvent/employeeName/asc</i>
+	- <i><-BASE_URL->/api/showEmployeeEvent/employeeName/desc</i>
 
 - <b>To Get Event for All Employee - SORT BY Impression </b>
 	
-	<-BASE_URL->/api/showEmployeeEvent/totalImpressions/asc
-	<-BASE_URL->/api/showEmployeeEvent/totalImpressions/desc
+	- <i><-BASE_URL->/api/showEmployeeEvent/totalImpressions/asc</i>
+	- <i><-BASE_URL->/api/showEmployeeEvent/totalImpressions/desc</i>
 
 - <b>To Get Event for All Employee - SORT BY Conversion </b>
 	
-	<-BASE_URL->/api/showEmployeeEvent/totalConversion/asc
-	<-BASE_URL->/api/showEmployeeEvent/totalConversion/desc
+	- <i><-BASE_URL->/api/showEmployeeEvent/totalConversion/asc</i>
+	- <i><-BASE_URL->/api/showEmployeeEvent/totalConversion/desc</i>
 	
 - <b>To Get Event for All Employee - SORT BY Revenue </b>
 	
-	<-BASE_URL->/api/showEmployeeEvent/totalRevenue/asc
-	<-BASE_URL->/api/showEmployeeEvent/totalRevenue/desc
+	- <i><-BASE_URL->/api/showEmployeeEvent/totalRevenue/asc</i>
+	- <i><-BASE_URL->/api/showEmployeeEvent/totalRevenue/desc</i>
 
 
 
