@@ -24,7 +24,7 @@ Go to root directory of project & then follow below steps & run mentioned comman
 
 	<i>php artisan serve </i>
 	
-	 - Above command will assign a url like http://127.0.0.1:8000/. ).
+	 - Above command will assign a url like http://127.0.0.1:8000/
 
 Now open the assigned URL in the browser.
 
