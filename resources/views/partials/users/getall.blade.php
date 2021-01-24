@@ -40,7 +40,7 @@
 					@endphp
 				  <img class="img-circle" src="{{$employee->avatar}}" alt="User Avatar" onerror=this.src="{{$fallBackImg}}">
 				  @else
-					  <span class="i-circle">@if (!empty($employee->name[0])){{$employee->name[0]}}@endif  </span>
+					  <span class="i-circle">@if (!empty($employee->employeeName[0])){{$employee->employeeName[0]}}@endif  </span>
 				  @endif  
 				</div>
 				
