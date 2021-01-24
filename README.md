@@ -1,6 +1,6 @@
 ## PROJECT SETUP STEPS 
 
-Kindly follow below step & run mentioned commands
+Go to root directory of project & then follow below steps & run mentioned commands
 
 - <b>Step # 1 Installation of Dependencies</b>
 
