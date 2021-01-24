@@ -27,4 +27,5 @@ Route::get('user/{id}', function($id) {
 Route::get('employee', 'API\EmployeeController@index');
 Route::get('employee/{id}', 'API\EmployeeController@show');
 Route::get('showEmployeeEvent', 'API\EmployeeController@showEventByEmployee');
+Route::get('showEmployeeEvent/{sortby}/{order}', 'API\EmployeeController@showEventByEmployee');
 

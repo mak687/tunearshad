@@ -31,17 +31,38 @@ Now open the assigned URL in the browser.
 
 ## API
 
-- To Get All List of USER
+- <b>To Get All List of Employee</b>
 
 	<-BASE_URL->/api/employee
 
-- To Get Sepecific User Info By Id
+- <b>To Get Sepecific Employee Info By Id</b>
 	
 	<-BASE_URL->/api/employee/{id}
 
-- To Get Event for All User
+- <b>To Get Event for All Employee</b>
 	
 	<-BASE_URL->/api/showEmployeeEvent
+
+- <b>To Get Event for All Employee - SORT BY NAME </b>
+	
+	<-BASE_URL->/api/showEmployeeEvent/employeeName/asc
+	<-BASE_URL->/api/showEmployeeEvent/employeeName/desc
+
+- <b>To Get Event for All Employee - SORT BY Impression </b>
+	
+	<-BASE_URL->/api/showEmployeeEvent/totalImpressions/asc
+	<-BASE_URL->/api/showEmployeeEvent/totalImpressions/desc
+
+- <b>To Get Event for All Employee - SORT BY Conversion </b>
+	
+	<-BASE_URL->/api/showEmployeeEvent/totalConversion/asc
+	<-BASE_URL->/api/showEmployeeEvent/totalConversion/desc
+	
+- <b>To Get Event for All Employee - SORT BY Revenue </b>
+	
+	<-BASE_URL->/api/showEmployeeEvent/totalRevenue/asc
+	<-BASE_URL->/api/showEmployeeEvent/totalRevenue/desc
+
 
 
 

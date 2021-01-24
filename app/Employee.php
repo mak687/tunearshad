@@ -27,7 +27,7 @@ class Employee extends Model
     public function getAllEmployeesWithLogs($sortBy = 'employees.name',$order = 'ASC'){
 		
 		return \DB::table('employees')->select(\DB::raw(
-							'employees.name,
+							'employees.name AS employeeName,
 							 employees.avatar,
 							 employees.avatar_img_fallback,
 							 employees.occupation, 

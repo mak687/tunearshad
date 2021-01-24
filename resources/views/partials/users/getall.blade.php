@@ -5,7 +5,7 @@
 		<div class="form-group">
 			<label>Select</label>
 			<select  id="sortBy" class="form-control sortby-option">
-			   <option value="employees.name" <?php if($sortBy == 'employees.name'){echo "selected='selected'";} ?> >Sort By Name</option>
+			   <option value="employeeName" <?php if($sortBy == 'employeeName'){echo "selected='selected'";} ?> >Sort By Name</option>
 			   <option value="totalImpressions" <?php if($sortBy == 'totalImpressions'){echo "selected='selected'";} ?> >Sort By Impression</option>
 			   <option value="totalConversion" <?php if($sortBy == 'totalConversion'){echo "selected='selected'";} ?> >Sort By Conversion</option>
 			   <option value="totalRevenue" <?php if($sortBy == 'totalRevenue'){echo "selected='selected'";} ?> >Sort By Revenue</option>
@@ -29,7 +29,7 @@
 			  <div class="box box-widget widget-user">
 				<!-- Add the bg color to the header using any of the bg-* classes -->
 				<div class="widget-user-header bg-aqua-active">
-				  <h3 class="widget-user-username">{{$employee->name}}</h3>
+				  <h3 class="widget-user-username">{{$employee->employeeName}}</h3>
 				  <h5 class="widget-user-desc">{{$employee->occupation}}</h5>
 				</div>
 				<div class="widget-user-image">

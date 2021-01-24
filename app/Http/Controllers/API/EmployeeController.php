@@ -25,18 +25,24 @@ class EmployeeController extends \App\Http\Controllers\Controller
     }
 	
 	//SHOW EVENT BY USER
-	public function showEventByEmployee()
+	public function showEventByEmployee($sortby = 'employeeName',$order = 'ASC')
     {
-        $employee = new Employee();
+		try{
+			$employee = new Employee();
 
-		$response = $employee->getAllEmployeesWithLogs();
-		
-		if(empty($response)){
+			$response = $employee->getAllEmployeesWithLogs($sortby,$order);
+			
+			if(empty($response)){
+				return response()->json([
+				'data' => 'Resource not found'
+				], 404);
+			}
+			
+			return $response;
+		}catch(Exception $e){
 			return response()->json([
-            'data' => 'Resource not found'
-			], 404);
+				'data' => 'Resource not found'
+				], 404);
 		}
-		
-		return $response;
     }
 }

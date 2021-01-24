@@ -27,7 +27,7 @@ class DashboardController extends Controller
 			$employee = new Employee();
            
 			//SORTING
-			$sortBy = isset($_POST['sortBy'])?$_POST['sortBy']:'employees.name';
+			$sortBy = isset($_POST['sortBy'])?$_POST['sortBy']:'employeeName';
 			$order  = isset($_POST['listingOrder'])?$_POST['listingOrder']:'ASC';
 		   
 			//GET SORTED EMPLOYEE DATA
