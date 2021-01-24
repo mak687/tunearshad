@@ -2,29 +2,29 @@
 
 Kindly follow below step & run mentioned commands
 
-- Step # 1 Installation of Libraries
+- <b>Step # 1 Installation of Dependencies</b>
 
 	 <i>composer install</i>
 
-- Step # 2 Create Database
+- <b>Step # 2 Create Database</b>
 
-	 php artisan db:create tune_arshad
+	 <i>php artisan db:create tune_arshad</i>
 
-- Step # 3 Run migration
+- <b>Step # 3 Run migration</b>
 
-	 php artisan migrate
+	<i> php artisan migrate</i>
 
-- Step # 4  Run seeder
+- <b>Step # 4  Run seeder</b>
 	
-	php artisan db:seed 
+	<i>php artisan db:seed </i>
 	
 	(this step will take approx 4 - 5 mins)
 
-- Final Step
+- <b>Final Step</b>
 
-	php artisan serve 
+	<i>php artisan serve </i>
 	
-	Above command will assign a url like http://127.0.0.1:8000/. ).
+	 - Above command will assign a url like http://127.0.0.1:8000/. ).
 
 Now open the assigned URL in the browser.
 
