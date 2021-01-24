@@ -25,11 +25,11 @@ class EmployeeController extends \App\Http\Controllers\Controller
     }
 	
 	//SHOW EVENT BY USER
-	public function showEventByUser()
+	public function showEventByEmployee()
     {
         $employee = new Employee();
 
-		$response = $employee->getAllUsersWithLogs();
+		$response = $employee->getAllEmployeesWithLogs();
 		
 		if(empty($response)){
 			return response()->json([

@@ -31,7 +31,7 @@ class DashboardController extends Controller
 			$order  = isset($_POST['listingOrder'])?$_POST['listingOrder']:'ASC';
 		   
 			//GET SORTED EMPLOYEE DATA
-		    $employees 	= $employee->getAllUsersWithLogs($sortBy,$order);
+		    $employees 	= $employee->getAllEmployeesWithLogs($sortBy,$order);
 			
             $view 	= view("partials\users\getall",compact('employees','sortBy','order'))->render();
 
