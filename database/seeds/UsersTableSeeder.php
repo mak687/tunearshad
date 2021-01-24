@@ -16,14 +16,14 @@ class UsersTableSeeder extends Seeder
 		
 		//AVATAR FALLBACK IMAGE
 		$imageArr=array(
-			asset("/assets/dist/img/user1-128x128.jpg"),
-			asset("/assets/dist/img/user2-160x160.jpg"),
-			asset("/assets/dist/img/user3-128x128.jpg"),
-			asset("/assets/dist/img/user4-128x128.jpg"),
-			asset("/assets/dist/img/user5-128x128.jpg"),
-			asset("/assets/dist/img/user6-128x128.jpg"),
-			asset("/assets/dist/img/user7-128x128.jpg"),
-			asset("/assets/dist/img/user8-128x128.jpg"),
+			"user1-128x128.jpg",
+			"user2-160x160.jpg",
+			"user3-128x128.jpg",
+			"user4-128x128.jpg",
+			"user5-128x128.jpg",
+			"user6-128x128.jpg",
+			"user7-128x128.jpg",
+			"user8-128x128.jpg",
 		);
 
         foreach ($data as $obj) {

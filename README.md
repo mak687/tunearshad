@@ -4,7 +4,7 @@ Kindly follow below step & run mentioned commands
 
 - Step # 1 Installation of Libraries
 
-	 composer install
+	 <i>composer install</i>
 
 - Step # 2 Create Database
 
@@ -16,7 +16,9 @@ Kindly follow below step & run mentioned commands
 
 - Step # 4  Run seeder
 	
-	php artisan db:seed (this step will take approx 4 - 5 mins)
+	php artisan db:seed 
+	
+	(this step will take approx 4 - 5 mins)
 
 - Final Step
 

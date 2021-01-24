@@ -25,10 +25,9 @@ class DashboardController extends Controller
 
 			
 			$employee = new Employee();
-
-            $users = $employee->getAllUsersWithLogs();
-            
-            $view = view("partials\users\getall",compact('users'))->render();
+           
+		   $employees 	= $employee->getAllUsersWithLogs();
+            $view 	= view("partials\users\getall",compact('employees'))->render();
 
              return response()->json(['html' => $view]);
 			
