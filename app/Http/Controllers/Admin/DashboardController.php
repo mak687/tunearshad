@@ -19,15 +19,21 @@ class DashboardController extends Controller
     }
 
 
-    public function getAllUsers(){
+    public function getAllEmployees(){
 
         try{
 
 			
 			$employee = new Employee();
            
-		   $employees 	= $employee->getAllUsersWithLogs();
-            $view 	= view("partials\users\getall",compact('employees'))->render();
+			//SORTING
+			$sortBy = isset($_POST['sortBy'])?$_POST['sortBy']:'employees.name';
+			$order  = isset($_POST['listingOrder'])?$_POST['listingOrder']:'ASC';
+		   
+			//GET SORTED EMPLOYEE DATA
+		    $employees 	= $employee->getAllUsersWithLogs($sortBy,$order);
+			
+            $view 	= view("partials\users\getall",compact('employees','sortBy','order'))->render();
 
              return response()->json(['html' => $view]);
 			

@@ -24,14 +24,15 @@ class Employee extends Model
     }
 
 
-    public function getAllUsersWithLogs(){
+    public function getAllUsersWithLogs($sortBy = 'employees.name',$order = 'ASC'){
 		
 		return \DB::table('employees')->select(\DB::raw(
 							'employees.name,
 							 employees.avatar,
 							 employees.avatar_img_fallback,
 							 employees.occupation, 
-							 SUM(cl.revenue) AS totalConversions,
+							 COUNT(cl.revenue) AS totalConversion,
+							 SUM(cl.revenue) AS totalRevenue,
 							 GROUP_CONCAT(revenue)  AS revenue,
 							 (SELECT COUNT(id) FROM `impression_logs` WHERE employee_id = employees.id ) AS totalImpressions,
 							 MIN(cl.time) AS minTime,
@@ -40,6 +41,7 @@ class Employee extends Model
 					)
 			 ->leftJoin('conversion_logs AS cl','cl.employee_id','=','employees.id')
              ->groupBy('employees.id')
+			 ->orderBy($sortBy, $order)
              ->get();
     }
 }

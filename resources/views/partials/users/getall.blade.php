@@ -1,5 +1,28 @@
+<!-- SORTING OPTIONS START -->
 <div class="row">
-      @if (!empty($employees))
+	<div class="col-md-4">
+		<!-- select -->
+		<div class="form-group">
+			<label>Select</label>
+			<select  id="sortBy" class="form-control sortby-option">
+			   <option value="employees.name" <?php if($sortBy == 'employees.name'){echo "selected='selected'";} ?> >Sort By Name</option>
+			   <option value="totalImpressions" <?php if($sortBy == 'totalImpressions'){echo "selected='selected'";} ?> >Sort By Impression</option>
+			   <option value="totalConversion" <?php if($sortBy == 'totalConversion'){echo "selected='selected'";} ?> >Sort By Conversion</option>
+			   <option value="totalRevenue" <?php if($sortBy == 'totalRevenue'){echo "selected='selected'";} ?> >Sort By Revenue</option>
+			</select>
+		</div>
+		<div class="btn-group">
+			<button class="btn btn-default sorting-button" <?php if($order == 'ASC'){echo "disabled";}?>  onClick="sortingFunction('ASC');"> <i class="fas fa-angle-double-up "></i>  Ascending </button>
+			<button class="btn btn-default sorting-button" <?php if($order == 'DESC'){echo "disabled";}?> href="javascript:void(0)" onClick="sortingFunction('DESC');"><i class="fas fa-angle-double-down"></i>  Descending </button>
+		</div>
+
+	</div>
+</div>
+<div style="clear:both;">&nbsp;</div>
+<!-- SORTING OPTIONS END -->
+
+<div class="row">
+		@if (!empty($employees))
 		  @foreach ($employees as $employee)
 			<div class="col-md-4">
 			  <!-- Widget: user widget style 1 -->
@@ -45,7 +68,7 @@
 					<!-- /.col -->
 					<div class="col-sm-4 border-right">
 					  <div class="description-block">
-						<h5 class="description-header">{{number_format($employee->totalConversions, 2)}}</h5>
+						<h5 class="description-header">{{$employee->totalConversion}}</h5>
 						<span class="description-text">conversions</span>
 					  </div>
 					  <!-- /.description-block -->
@@ -53,7 +76,7 @@
 					<!-- /.col -->
 					<div class="col-sm-4">
 					  <div class="description-block">
-						<h5 class="description-header">{{number_format($employee->totalConversions + $employee->totalImpressions, 2)}}</h5>
+						<h5 class="description-header">{{number_format($employee->totalRevenue, 2)}}</h5>
 						<span class="description-text">revenue</span>
 					  </div>
 					  <!-- /.description-block -->
@@ -71,5 +94,10 @@
       </div>
 
      <script>
+		//ONCHANGE OB SORTING OPTION
+		jQuery('.sortby-option').on('change', function() {
+			jQuery('.sorting-button').prop("disabled", false);
+		});
+			
       jQuery('.inlinesparkline').sparkline('html', {type: 'line', height: '3.5em', width: '20em'}); 
      </script> 

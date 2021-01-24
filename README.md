@@ -18,7 +18,7 @@ Kindly follow below step & run mentioned commands
 	
 	<i>php artisan db:seed </i>
 	
-	(this step will take approx 4 - 5 mins)
+	 - This step will take approx 4 - 5 mins
 
 - <b>Final Step</b>
 

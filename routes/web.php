@@ -19,4 +19,5 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'Admin\DashboardController@index')->name('dashboard'); 
-Route::Post('/getAllUsers', 'Admin\DashboardController@getAllUsers')->name('getAllUsers'); 
+Route::Post('logout', 'Admin\DashboardController@index')->name('logout'); 
+Route::Post('/getAllEmployees', 'Admin\DashboardController@getAllEmployees')->name('getAllEmployees'); 
