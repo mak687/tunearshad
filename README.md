@@ -13,11 +13,14 @@ Go to root directory of project & then follow below steps & run mentioned comman
 - <b>Step # 3 Run migration</b>
 
 	<i> php artisan migrate</i>
+	
+	- Choose 'Yes' Option after this command as application is on production mode.
 
 - <b>Step # 4  Run seeder</b>
 	
 	<i>php artisan db:seed </i>
 	
+	 - Choose 'Yes' Option after this command as application is on production mode.
 	 - This step will take approx 4 - 5 mins
 
 - <b>Final Step</b>
